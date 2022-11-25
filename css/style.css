@@ -1,0 +1,54 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+body{
+  background-color: #4285f2;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.warrper{
+  padding: 15px;
+  border-radius: 6px;
+  background-color: #fff;
+  max-width: 450px;
+}
+.warrper h1{
+  font-size: 30px;
+}
+.warrper p{
+  font-size: 18px;
+  font-weight: 500;
+  margin: 8px 0 18px;
+  color: rgb(73, 73, 73);
+}
+.warrper input{
+  width: 100%;
+  outline: none;
+  display: block;
+  font-size: 18px;
+  padding: 12px 15px;
+  border-radius: 6px;
+  border: 1px solid #b3b2b2;
+}
+.warrper button{
+  opacity: .5;
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 15px;
+  border-radius: 6px;
+  padding: 12px 15px;
+  background-color: #4285f2;
+  pointer-events: none;
+}
+.warrper input:valid ~  button{
+  pointer-events: auto;
+  opacity: 1;
+}
